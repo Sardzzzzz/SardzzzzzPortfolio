@@ -23,7 +23,8 @@ button.addEventListener("click", () => {
 
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential)=> { 
-    alert("Worked")})
+    alert("Worked");
+    window.location.href = "/src/pages/landing.html"})
   .catch((error) => {
-    alert("Didn't work > " + error.message)})
+    alert("Didn't work > " + error.message);})
 })
